@@ -1,0 +1,95 @@
+.main_wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.todo_wrapper h1 {
+    color: #fff;
+    padding: 0 13px;
+    margin-bottom: 30px;
+}
+
+.each_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.each_list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.each_list::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.each_list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.todo_input {
+    margin: 0 13px;
+    position: relative;
+}
+
+.todo_input input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding-right: 70px;
+}
+
+.todo_input input:focus-visible {
+    border: 1px solid dodgerblue;
+}
+
+.icon_box {
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 45px;
+    transform: translateY(-50%);
+    position: absolute !important;
+}
+
+.icon_box i {
+    font-size: 20px;
+}
+
+.clear_all_btn {
+    text-align: center;
+}
+
+.clear_all_btn button {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 20%;
+    text-transform: capitalize;
+}
+
+.each_list {
+    padding: 0 10px;
+    max-height: 340px;
+    overflow-x: auto;
+}
+
+.each_list .todo_list {
+    border-radius: 10px;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+.each_list .icon_box i {
+    color: #fff;
+}
